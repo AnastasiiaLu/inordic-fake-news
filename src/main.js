@@ -2,4 +2,8 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+//Импортируем созданный нами роутер
+import router from './utils/router'
+
+//После создания приложения с помощью use импортируем созданный нами роутер
+createApp(App).use(router).mount('#app')
